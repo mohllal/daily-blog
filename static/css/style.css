@@ -1,0 +1,417 @@
+/* General */
+
+a{
+    color: #003dab;
+}
+
+
+/* Base Template */
+.wrapper .container {
+    max-width: 80rem;
+}
+
+.navigation {
+    background: #f4f5f6;
+    border-bottom: .1rem solid #d1d1d1;
+}
+
+.navigation .navbar-toggle {
+    color: #003dab;
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+}
+
+.navigation__title {
+    color: #606c76;
+    font-weight: bold;
+    margin-left: 20px !important;
+}
+
+.navigation__title .title__image {
+    height: 2.0rem;
+    position: relative;
+    top: .3rem;
+}
+
+.navigation__title .title__text {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: #003dab;
+}
+
+.navigation .navbar-right{
+    margin-right: 30px;
+}
+
+.navigation .navbar-nav > li > a:hover,
+.navigation .navbar-nav > li > a:focus,
+.navigation .navbar-nav > .active > a:hover,
+.navigation .navbar-nav > .active > a:focus,
+.navigation .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: rgba(227, 228, 229, 0.6)
+}
+
+.list__item {
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+    position: relative;
+}
+
+.list__item__link {
+    line-height: 5.2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: #003dab !important;
+}
+
+.content {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+
+/* Signup Page */
+.signup {
+    max-width: 40rem;
+    min-width: 30rem;
+    margin: 0 auto;
+    background-color: #f4f5f6;
+    border: .1rem solid #d1d1d1;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.signup__header {
+    font-weight: bold;
+    color: #003dab;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.signup__message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.signup .form__input:focus{
+    border-color: #097fd2;
+}
+
+.signup .form__submit {
+    margin-top: .5rem;
+    width: 100%;
+    background-color: #003dab;
+    border-color: #097fd2;
+}
+
+.signup .form__submit:hover {
+    background-color: #004feb;
+}
+
+
+/* Login Page */
+.login {
+    max-width: 40rem;
+    min-width: 30rem;
+    margin: 0 auto;
+    background-color: #f4f5f6;
+    border: .1rem solid #d1d1d1;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.login__header {
+    font-weight: bold;
+    color: #003dab;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login__message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.login .form__input:focus{
+    border-color: #097fd2;
+}
+
+.login__footer {
+    font-weight: 300;
+    color: #A3AFAB;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.login .form__submit {
+    margin-top: .5rem;
+    width: 100%;
+    background-color: #003dab;
+    border-color: #097fd2;
+}
+
+.login .form__submit:hover {
+    background-color: #004feb;
+}
+
+
+/* Post form page */
+.newpost .form__input {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 3rem 3rem 3rem;
+    margin-bottom: 20px;
+}
+
+.newpost .form__input:focus{
+    border-color: #097fd2;
+}
+
+.newpost .form__textarea {
+    min-height: 50rem;
+    padding: 3rem 3rem 3rem;
+    font-size: 2.1rem;
+    resize: none;
+}
+
+.newpost .form__textarea:focus{
+    border-color: #097fd2;
+}
+
+.newpost .form__submit {
+    background-color: #003dab;
+    border-color: #097fd2;
+}
+
+.newpost .form__submit:hover {
+    background-color: #004feb;
+}
+
+.newpost .form__cancel{
+    background-color: #003dab;
+    border: .1rem solid #097fd2;
+    border-radius: .4rem;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    padding: 0 3rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.newpost .form__cancel:hover {
+    background-color: #004feb;
+}
+
+.newpost .form__message {
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+
+/* Post page */
+.post {
+    margin-bottom: 2.0rem;
+}
+
+.post__meta {
+    margin-bottom: 2rem;
+    clear: both;
+    position: relative;
+}
+
+.post .meta__author {
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.post .meta__author__image {
+    width: auto;
+    height: 100%;
+}
+
+.post .meta__post {
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 1.5rem;
+}
+
+.post .meta__post__author {
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.post__title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.post__content {
+    font-size: 2.1rem;
+}
+
+.post__like {
+    float: left;
+    margin-bottom: 4rem;
+}
+
+.post .like__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+.post .like__count, .post .comment__count{
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.post__edit {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.post__edit .edit__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+.post__delete {
+    display: inline-block;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: .1rem solid #d1d1d1;
+}
+
+.post__delete .delete__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+.post__comment {
+    display: inline-block;
+    margin-left: 2rem;
+
+}
+
+.post__comment .comment__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+.post__dislike {
+    display: inline-block;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: .1rem solid #d1d1d1;
+}
+
+.post__dislike .dislike__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+
+/* Comments */
+.comments {
+    margin-top: 8rem;
+}
+
+.comment {
+    border: .1rem solid #d1d1d1;
+    margin-top: 2.0rem;
+    padding: 2.0rem;
+}
+
+.comment__header {
+    margin-top: 4.0rem;
+    margin-left: 2.0rem;
+}
+
+.comment__meta {
+    margin-bottom: 2rem;
+}
+
+.comment .meta__author {
+    width: 3.6rem;
+    height: 3.6rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.comment .meta__author__image {
+    width: auto;
+    height: 100%;
+}
+
+.comment .meta__comment {
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.comment .meta__comment__author {
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.comment__content {
+    font-size: 1.8rem;
+}
+
+.comment__delete {
+    display: inline-block;
+    margin-left: 1rem;
+    float: right;
+}
+
+.comment .delete__icon {
+    width: 2.0rem;
+    height: 2.0rem;
+    vertical-align: middle;
+}
+
+.comment__edit {
+    display: inline-block;
+    margin-left: 1rem;
+    float: right;
+}
+
+.comment .edit__icon {
+    width: 2.0rem;
+    height: 2.0rem;
+    vertical-align: middle;
+}
+
+
+/* Footer */
+.footer {
+    margin-bottom: 2rem;
+}
+

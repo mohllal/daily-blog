@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="newpost">
+            <div class="newpost__form">
+                <form  class="form-horizontal" method="post" autocomplete="off">
+                    <input type="text" class="form__input" placeholder="Title" name="subject" value="{{subject}}" autofocus required>
+                    <textarea type="text" class="form__textarea" placeholder="Tell your story..." name="content" required>{{content}}</textarea>
+                    <input class="form__submit" type="submit" value="post">
+                    <a href="/" class="form__cancel">Cancel</a>
+                    <span class="form__message">{{error}}</span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

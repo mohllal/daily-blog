@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="signup">
+        <h5 class="signup__header">Create New Account</h5>
+        <p class="signup__message">{{error}}</p>
+        <div class="signup__form">
+            <form class="form-horizontal" method="post">
+                <input type="text" class="form__input form-control" placeholder="Username" name="username" value="{{username}}" autofocus required>
+                <input type="password" class="form__input form-control" placeholder="Password" name="password" value="" required>
+                <input type="password" class="form__input form-control" placeholder="Repeat Password" name="verify" value="" required>
+                <input type="text" class="form__input form-control" placeholder="Email (optional)" name="email" value="{{email}}">
+                <input type="text" class="form__input form-control" placeholder="Telephone (optional)" name="telephone" value="{{phone}}">
+                <input type="tel" class="form__input form-control" placeholder="Address (optional)" name="address" value="{{address}}">
+                <input type="submit" class="form__submit form-control" value="Signup">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

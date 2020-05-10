@@ -1,0 +1,32 @@
+<div class="post">
+    <div class="post__meta">
+        <div class="meta__author">
+            <img class="meta__author__image" src="/static/images/compose.svg" alt="">
+        </div>
+        <div class="meta__post">
+            <div class="meta__post__author">{{author}}</div>
+            <div class="meta__post__date">{{post.created.strftime("%b %d, %Y")}}</div>
+        </div>
+    </div>
+    <h1 class="post__title">
+        <a href="/blog/{{post.key().id()}}">{{post.subject}}</a>
+    </h1>
+    <p class="post__content">
+        {{post._render_text | safe}}
+    </p>
+    <div class="post__like">
+        <a href="/blog/{{post.key().id()}}/newlike">
+            <img class="like__icon" src="/static/images/like.svg" alt="">
+        </a>
+        <span class="like__count">{{post.likes}}</span>
+    </div>
+
+    <div class="post__comment">
+        <a href="/blog/{{post.key().id()}}/newcomment">
+            <img src="/static/images/comment-bubble.svg" alt="" class="comment__icon">
+        </a>
+        <span class="comment__count">{{post.comments}}</span>
+    </div>
+</div>
+
+

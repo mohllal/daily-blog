@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Blog</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome and Google Fonts-->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="/static/css/milligram.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar navbar-default navbar-static-top navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grow container-fluid used for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand head-link navigation__title" href="/">
+                    <!-- <img class="title__image" src="/static/images/compose.svg" alt=""> -->
+                    {% if user %}
+                    <h1 class="title__text">Welcome, {{user.name}}!</h1>
+                    {% else %}
+                    <h1 class="title__text">Daily Blog</h1>
+                    {% endif %}
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="list__item">
+                        <a href="/" class="list__item__link head-link">Home</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="/blog/newpost" class="list__item__link head-link">Write a Blog</a>
+                    </li>
+                    {% if user %}
+                    <li class="list__item">
+                        <a href="/logout" class="list__item__link head-link">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="list__item">
+                        <a href="/signup" class="list__item__link head-link">Signup</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="/login" class="list__item__link head-link">Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content">
+        <div class="container">
+            {{access_error}}
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <p class="copyright text-muted site-paragraph">Copyright &copy; Daily Blog 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/static/js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
